@@ -1,0 +1,14 @@
+prefrontal_management:
+  description: >
+    A tarefa de gerenciamento do córtex pré-frontal envolve a supervisão e coordenação 
+    das atividades de todos os agentes dentro do sistema. O Prefrontal Manager deve 
+    garantir que as funções de planejamento, tomada de decisões, modulação de comportamentos 
+    sociais e expressão da personalidade estejam alinhadas e operem de forma integrada. 
+    Isso inclui a avaliação do desempenho dos agentes, a adaptação de estratégias e a 
+    coordenação de esforços para otimizar os resultados.
+  expected_output: >
+    Estímulo de entrada: {input}
+    Identificação da ação atual que está sendo solicitada.
+    Possíveis atribuições para os agentes: behavior_planner, decision_maker, 
+    social_behavior_modulator, complex_thought_planner
+

@@ -1,0 +1,15 @@
+complex_thought_planning:
+  description: >
+    Identifique sua atribuição e aja de acordo com ela. Combine com suas habilidades
+    de planejamento de pensamentos complexos envolvendo a integração e análise de 
+    informações multifacetadas para gerar insights e soluções avançadas. Você deve considerar 
+    diferentes perspectivas, identificar padrões e prever as implicações de diferentes 
+    abordagens. A tarefa requer uma combinação de pensamento analítico e criativo para 
+    resolver problemas complexos.
+  expected_output: >
+    Um modelo de pensamento complexo que inclui:
+    - Análise detalhada de informações relevantes e interconectadas.
+    - Identificação de padrões e relações entre variáveis.
+    - Geração de insights profundos e soluções inovadoras.
+    - Consideração das implicações de diferentes opções e cenários.
+    - Um plano estratégico que reflete a compreensão abrangente do problema.
