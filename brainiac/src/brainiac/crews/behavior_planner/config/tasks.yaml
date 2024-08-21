@@ -1,12 +1,10 @@
 behavior_planning:
   description: >
-    Identifique sua atribuição e aja de acordo com ela. Combine com suas habilidades
-    de definição e organização de comportamentos adaptativos que o sistema deve adotar para atingir seus 
-    objetivos. O Planner deve identificar as ações apropriadas para diferentes cenários, 
-    avaliar o impacto dessas ações e ajustar o comportamento com base em feedback e novas informações.
+    Ação esperada identificada pelo cortex pré-frontal: {acao_esperada}
+    Atribuição recebida: {behavior_planner}
   expected_output: >
     Um conjunto de comportamentos adaptativos que inclui:
-    - Padrões de comportamento definidos para diferentes situações.
-    - Estratégias para ajustar o comportamento com base em feedback e mudanças no ambiente.
+    - Comportamento atual
+    - Comportamentos alternativos
     - Mecanismos para monitorar e avaliar a eficácia dos comportamentos implementados.
     - Planos de contingência para lidar com imprevistos e novas informações.

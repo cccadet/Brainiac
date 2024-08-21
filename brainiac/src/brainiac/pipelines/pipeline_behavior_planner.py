@@ -1,18 +1,18 @@
 from crewai import Pipeline
 from crewai.project import PipelineBase
-from ..crews.normal_crew.normal_crew import NormalCrew
+from ..crews.behavior_planner.crew import BehaviorPlannerCrew
 
 
 @PipelineBase
-class NormalPipeline:
+class BehaviorPipeline:
     def __init__(self):
         # Initialize crews
-        self.normal_crew = NormalCrew().crew()
+        self.behavior_crew = BehaviorPlannerCrew().crew()
 
     def create_pipeline(self):
         return Pipeline(
             stages=[
-                self.normal_crew
+                self.behavior_crew
             ]
         )
     

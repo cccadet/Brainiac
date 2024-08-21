@@ -1,14 +1,21 @@
 import os
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from langchain_openai import ChatOpenAI
 
 model_name = os.getenv("OPENAI_MODEL_NAME", "gpt-4o-mini")
 llm = ChatOpenAI(temperature=0.6, model_name=model_name)
 
+class ComplexThoughtPlanner(BaseModel):
+    analise_detalhada: str = Field(..., description="Análise detalhada de informações relevantes")
+    padroes_relacoes: str = Field(..., description="Padrões e relações entre informações")
+    insights: str = Field(..., description="Insights profundos e soluções inovadoras")
+    implicacoes_cenarios: str = Field(..., description="Implicações de diferentes opções e cenários")
+    compreensao_abrangente: str = Field(..., description="Compreensão abrangente do problema")
+
 @CrewBase
-class ComplexThoughtPlannerCrew(BaseModel):
+class ComplexThoughtPlannerCrew():
     """Complex Thought Planner Crew"""
 
     agents_config = "config/agents.yaml"
@@ -27,6 +34,8 @@ class ComplexThoughtPlannerCrew(BaseModel):
     def complex_thought_planning(self) -> Task:
         return Task(
             config=self.tasks_config["complex_thought_planning"],
+            agent=self.complex_thought_planner(),
+            output_pydantic=ComplexThoughtPlanner
         )
 
     @crew
