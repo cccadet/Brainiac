@@ -14,6 +14,7 @@ class PrefrontalCortex(BaseModel):
     decision_maker: str = Field(..., description="Informação necessária para o tomador de decisão")
     social_behavior_modulator: str = Field(..., description="Informação necessária para o modulador de comportamento social")
     complex_thought_planner: str = Field(..., description="Informação necessária para o planejador de pensamento complexo")
+    personality_expression_planner: str = Field(..., description="Informação necessária para o planejador de expressão de personalidade")
 @CrewBase
 class PrefrontalCortexInCrew():
     """Prefrontal Cortex In Crew"""

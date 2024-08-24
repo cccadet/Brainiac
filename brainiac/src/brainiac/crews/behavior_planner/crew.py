@@ -48,4 +48,5 @@ class BehaviorPlannerCrew():
             verbose=True,
             llm=llm,
 			memory=False,
+            planning=False,
         )

@@ -1,25 +1,17 @@
-decision_making:
-  description: >
-    A tarefa de tomada de decisões envolve a análise de opções disponíveis e a escolha 
-    da melhor alternativa com base em critérios definidos. O Decision Maker deve 
-    avaliar informações relevantes, considerar possíveis consequências e fazer uma 
-    escolha estratégica que atenda aos objetivos do sistema. A tarefa também pode 
-    incluir a revisão de decisões passadas e ajustes baseados em novos dados ou feedback.
-  expected_output: >
-    Uma decisão clara e justificada que inclui:
-    - Análise das opções disponíveis e seus prós e contras.
-    - Avaliação das implicações de cada opção em relação aos objetivos do sistema.
-    - Escolha da alternativa mais eficaz, com uma justificativa detalhada.
-    - Plano de ação para implementar a decisão tomada.
-    - Mecanismos para monitorar os resultados e ajustar a decisão conforme necessário.
-
 prefrontal_management:
   description: >
-    Como córtex pré-frontal supervisione e coordene as atividades de todos os agentes dentro do sistema. 
-    Garanta que as funções de planejamento, tomada de decisões, modulação de comportamentos 
-    sociais e expressão da personalidade estejam alinhadas e operem de forma integrada.
-    Identifique a saída esperada, como uma reposta apropriada, conversa ou uma ação a ser tomada.
-    Entrada: {input}
+    Entrada inicial: {input}
+
+    Decisão inicial: {acao_esperada}
+
+    Decisões avaliada pelo decision_maker:
+    Decisões disponíveis: {available_decisions}
+    Implicações: {implications}
+    Decisão ótima: {optimal_decision}
+    Estratégia de decisão: {decision_strategy}
+    Consistência nas decisões: {decision_consistency}
+
+    Combine as informações e tome a decisão final.
   expected_output: >
     Resposta apropriada ou ação a ser tomada.
 

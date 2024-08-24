@@ -48,4 +48,5 @@ class ComplexThoughtPlannerCrew():
             verbose=True,
             llm=llm,
 			memory=False,
+            planning=False,
         )

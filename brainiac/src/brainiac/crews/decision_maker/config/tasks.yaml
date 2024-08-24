@@ -1,0 +1,37 @@
+decision_making:
+  description: >
+    Planejador de comportamento:
+    Comportamento atual: {comportamento_atual}
+    Comportamento alternativo: {comportamento_alternativo}
+    Mecanismo de controle e monitoramento: {mecanismo_controle}
+    Plano de contingência: {plano_contingencia}
+
+    Modulador de comportamento social:
+    Comportamento social: {social_behavior}
+    Diretrizes: {guidelines}
+    Exemplos: {examples}
+    Estratégia: {estrategy}
+    Mecanismos de consistência: {consistency}
+
+    Planejador de pensamento complexo:
+    Análise detalhada: {analise_detalhada}
+    Padrões e relações: {padroes_relacoes}
+    Insights: {insights}
+    Implicações e cenários: {implicacoes_cenarios}
+    Compreensão abrangente: {compreensao_abrangente}
+
+    Expressão de personalidade:
+    Personalidade: {personality}
+    Diretrizes: {guidelines}
+    Exemplos: {examples}
+    Estratégia: {estrategy}
+    Consistência: {consistency}
+
+
+  expected_output: >
+    Uma decisão clara e justificada que inclui:
+    - Análise das opções disponíveis e seus prós e contras.
+    - Avaliação das implicações de cada opção em relação aos objetivos do sistema.
+    - Escolha da alternativa mais eficaz, com uma justificativa detalhada.
+    - Plano de ação para implementar a decisão tomada.
+    - Mecanismos para monitorar os resultados e ajustar a decisão conforme necessário.

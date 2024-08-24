@@ -1,6 +1,7 @@
 personality_expression_planning:
   description: >
-    A tarefa de planejamento da expressão da personalidade envolve a definição e gestão de como a personalidade do sistema é comunicada e expressa em diferentes contextos e interações. O Personality Express Planner deve considerar fatores como o público-alvo, o contexto da interação e os objetivos do sistema para garantir que a expressão da personalidade seja apropriada e eficaz.
+    Ação esperada identificada pelo cortex pré-frontal: {acao_esperada}
+    Atribuição recebida: {personality_expression_planner}
   expected_output: >
     Um plano detalhado para a expressão da personalidade que inclui:
     - Diretrizes para a manifestação da personalidade em diferentes contextos e interações.

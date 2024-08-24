@@ -1,15 +1,10 @@
 social_behavior_modulation:
   description: >
-    Identifique sua atribuição e aja de acordo com ela. Combine com suas habilidades
-    de modulação de comportamento social envolvendo a adaptação do comportamento 
-    do sistema para atender às expectativas sociais e contextuais. Analise o contexto social, 
-    ajuste o comportamento do sistema para se alinhar com normas e expectativas, e garantir 
-    interações positivas e respeitosas. Isso pode incluir a gestão de respostas a diferentes 
-    tipos de feedback e a adaptação às mudanças nas dinâmicas sociais.
+    Ação esperada identificada pelo cortex pré-frontal: {acao_esperada}
+    Atribuição recebida: {social_behavior_modulator}
   expected_output: >
     Um plano de modulação de comportamento social que inclui:
     - Diretrizes para o comportamento em diferentes contextos sociais.
-    - Estratégias para ajustar o comportamento com base no feedback e nas dinâmicas sociais.
     - Exemplos de respostas e interações que promovem relações positivas e respeitosas.
+    - Estratégias para ajustar o comportamento com base no feedback e nas dinâmicas sociais.
     - Mecanismos para monitorar e avaliar a eficácia das interações sociais.
-    - Ajustes contínuos para melhorar a adequação e eficácia do comportamento social do sistema.
