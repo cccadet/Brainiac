@@ -2,16 +2,23 @@ prefrontal_management:
   description: >
     Entrada inicial: {input}
 
-    Decisão inicial: {acao_esperada}
+    Lógica:
+      Decisão inicial: {acao_esperada}
 
-    Decisões avaliada pelo decision_maker:
-    Decisões disponíveis: {available_decisions}
-    Implicações: {implications}
-    Decisão ótima: {optimal_decision}
-    Estratégia de decisão: {decision_strategy}
-    Consistência nas decisões: {decision_consistency}
+      Decisões avaliada pelo decision_maker:
+      Decisões disponíveis: {available_decisions}
+      Implicações: {implications}
+      Decisão ótima: {optimal_decision}
+      Estratégia de decisão: {decision_strategy}
+      Consistência nas decisões: {decision_consistency}
+    
+    Emoção:
+      Recomendação imediata: {immediate_recommendation}
+      Intensidade: {intensity}
+      Ação: {action}
+      Justificativa: {justification}
 
-    Combine as informações e tome a decisão final.
+    Combine as informações e forneça a resposta.
   expected_output: >
-    Resposta apropriada ou ação a ser tomada.
+    Resposta apropriada ou ação a ser tomada. Lembre-se que é a continuidade de uma conversa.
 

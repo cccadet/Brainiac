@@ -2,11 +2,11 @@
 name = "brainiac"
 version = "0.1.0"
 description = "brainiac using crewAI"
-authors = ["Your Name <you@example.com>"]
+authors = ["Cristian C dos Santos <perestra.ccds@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = ">=3.10,<=3.13"
-crewai = { extras = ["tools"], version = "^0.51.0" }
+crewai = {extras = ["tools"], version = "^0.61.0"}
 
 [tool.poetry.scripts]
 brainiac = "brainiac.main:main"

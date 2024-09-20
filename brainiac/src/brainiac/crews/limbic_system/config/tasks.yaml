@@ -1,0 +1,13 @@
+stimulus_amygdala:
+  description: >
+    Estímulo recebido pelo cortex pré-frontal: {acao_esperada}
+    Processar um estímulo e avaliar a intensidade emocional da resposta. Dependendo da 
+    avaliação, o agente deve gerar uma resposta emocional adequada, seja de fuga, alerta, ou de 
+    tranquilidade.
+  expected_output: >
+    A resposta do agente deve ser uma recomendação de ação imediata com base no 
+    estímulo processado. A saída deve incluir uma análise da intensidade emocional, 
+    como "alta", "média" ou "baixa", e uma ação sugerida como "fugir", "lutar" ou 
+    "ignorar". Também deve fornecer uma breve justificativa da avaliação, 
+    mencionando as características do estímulo.
+

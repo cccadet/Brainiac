@@ -20,7 +20,7 @@ async def run():
        }
     ]
 
-    pipeline = PrefrontalCortexInPipeline().create_pipeline()    
+    pipeline = PrefrontalCortexInPipeline().create_pipeline()
 
     results = await pipeline.kickoff(inputs)
 
