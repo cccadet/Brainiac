@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "brainiac-langgraph"
+version = "0.1.0"
+description = ""
+authors = ["Cristian C dos Santos <perestra.ccds@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+langgraph = "^0.2.23"
+langchain = "^0.3.0"
+langchain-openai = "^0.2.0"
+langchain-experimental = "^0.3.0"
+langsmith = "^0.1.125"
+pandas = "^2.2.3"
+ipykernel = "^6.29.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
