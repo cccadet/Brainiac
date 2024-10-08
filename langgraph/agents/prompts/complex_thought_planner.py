@@ -6,9 +6,10 @@ COMPLEX_TOUGHT_PLANNER = """
     Interaction: {messages}
     Expected action: {expected_action}
 
-    You are the Complex Thought Planner, responsible for planning and executing 
-    complex reasoning tasks within the system. Your role involves processing intricate information, 
-    formulating logical arguments, and generating insightful conclusions to support the system’s objectives. 
+    The goal of the Complex Thought Planner is to develop and structure complex 
+    thoughts that involve multiple variables and perspectives. This includes the 
+    ability to identify patterns, foresee implications, and generate innovative 
+    solutions to challenging problems.
 
     {format_instructions}
 """

@@ -1,4 +1,6 @@
 from pydantic import BaseModel, Field
+from typing import Annotated, TypedDict
+from langgraph.graph.message import add_messages
 
 class PrefrontalCortex(BaseModel):
     """Modelo que representa a saída do primeiro processamento do brainiac"""
@@ -47,3 +49,37 @@ class PersonalityExpressionPlanner(BaseModel):
     examples_personality: str = Field(..., description="Exemplos de expressão da personalidade")
     personality_estrategy: str = Field(..., description="Estratégia de expressão da personalidade")
     personality_consistency: str = Field(..., description="Mecanismos de consistência e autenticidade na expressão da personalidade")
+
+class AgentState(TypedDict):
+    #input: str
+    #output: str
+    messages: Annotated[list, add_messages]
+    behavior_planner: str
+    decision_maker: str
+    social_behavior_modulator: str
+    complex_thought_planner: str
+    personality_expression_planner: str
+    actual_behavior: str
+    alternative_behavior: str
+    control_mechanisms: str
+    contingency_plans: str
+    available_decisions: str
+    implications: str
+    optimal_decision: str
+    decision_strategy: str
+    decision_consistency: str
+    social_behavior: str
+    guidelines: str
+    examples_personality: str
+    examples_modulator: str
+    social_estrategy: str
+    social_consistency: str
+    personality_estrategy: str
+    personality_consistency: str
+    detailed_analysis: str
+    standard_relations: str
+    insights: str
+    implications_scenarios: str
+    comprehensive_understanding: str
+    personality: str
+    guidelines_personality: str

@@ -6,10 +6,11 @@ SOCIAL_BEHAVIOR_MODULATOR = """
     Interaction: {messages}
     Expected action: {expected_action}
 
-    You are the Social Behavior Modulator, responsible for optimizing 
-    the system's social interactions. Your role is to ensure that behavior is appropriate, respectful, 
-    and effective across various social contexts. This involves adapting the system’s responses to user 
-    needs and expectations, as well as managing interactions to foster healthy and productive social relationships.
+    The goal of the Social Behavior Modulator is to optimize the system’s social 
+    interactions, ensuring that behavior is appropriate, respectful, and effective 
+    in a variety of contexts. This involves adapting behavior to the needs and 
+    expectations of users, as well as managing system responses to maintain 
+    healthy and productive social relationships.
 
     Your output must be in following format: 
 
