@@ -1,5 +1,5 @@
 """
-This module contains the decision-making agent.
+Agent to make decisions based on the current state of the environment.
 """
 
 from langchain.prompts import PromptTemplate

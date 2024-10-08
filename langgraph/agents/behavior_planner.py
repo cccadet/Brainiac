@@ -1,5 +1,5 @@
 """
-Agente que processa informações vindas do cortex pré-frontal e planeja o comportamento.
+Agent that processes information from the prefrontal cortex and plans behavior.
 """
 
 from langchain.prompts import PromptTemplate
@@ -13,13 +13,14 @@ from .config.models import model
 parser = PydanticOutputParser(pydantic_object=BehaviorPlanner)
 
 def behavior_planner_agent(state):
-    """Esssa função é responsável por gerar um plano de comportamento para o agente
+    """
+    This function is responsible for generating a behavior plan for the agent.
     
     Args:
-        state (dict): Dicionário com informações sobre o estado atual do agente
+        state (dict): Dictionary with information about the current state of the agent
 
     Returns:
-        dict: Dicionário com informações sobre o plano de comportamento gerado
+        dict: Dictionary with information about the generated behavior plan
     """
     prompt = PromptTemplate(
         template = BEHAVIOR_PLANNER,

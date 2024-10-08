@@ -1,5 +1,5 @@
 """
-This module contains the agent that interacts with the personality expression planner model.
+Agent for the personality expression planner.
 """
 
 from langchain.prompts import PromptTemplate
@@ -12,6 +12,16 @@ from .prompts.personality_expression_planner import PERSONALITY_EXPRESSION_PLANN
 parser = PydanticOutputParser(pydantic_object=PersonalityExpressionPlanner)
 
 def personality_expression_planner_agent(state):
+    """
+    This function processes the input messages and assigns tasks to the
+    personality expression planner.
+
+    Args:
+        state (dict): Dictionary with information about the current state of the agent
+
+    Returns:
+        dict: Dictionary with information about the personality expression plan
+    """
     prompt = PromptTemplate(
         template = PERSONALITY_EXPRESSION_PLANNER,
         input_variables=["messages"],

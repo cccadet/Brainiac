@@ -43,7 +43,7 @@ class ComplexThoughtPlanner(BaseModel):
 class PersonalityExpressionPlanner(BaseModel):
     """Modelo que representa a saída do planejador de expressão de personalidade"""
     personality: str = Field(..., description="Personalidade do Brainiac")
-    guidelines: str = Field(..., description="Diretrizes para expressão da personalidade")
+    guidelines_personality: str = Field(..., description="Diretrizes para expressão da personalidade")
     examples_personality: str = Field(..., description="Exemplos de expressão da personalidade")
     personality_estrategy: str = Field(..., description="Estratégia de expressão da personalidade")
     personality_consistency: str = Field(..., description="Mecanismos de consistência e autenticidade na expressão da personalidade")

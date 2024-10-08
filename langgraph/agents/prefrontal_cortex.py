@@ -1,6 +1,6 @@
 """
-Agente que processa informações de entrada simulando o córtex pré-frontal 
-e atribuindo tarefas às demais partes do sistema.
+Agent that processes input information by simulating the prefrontal cortex
+and assigning tasks to other parts of the system.
 """
 
 from langchain.prompts import PromptTemplate
@@ -15,13 +15,13 @@ parser = PydanticOutputParser(pydantic_object=PrefrontalCortex)
 
 def prefrontal_cortex_agent(state):
     """
-    Processa as mensagens de entrada e atribui tarefas às diferentes partes do sistema.
+    Processes incoming messages and assigns tasks to different parts of the system.
 
     Args:
-        state (dict): Estado atual contendo as mensagens de entrada.
+        state (dict): Current state containing input messages.
 
     Returns:
-        dict: Dicionário com as tarefas atribuídas às diferentes partes do sistema.
+        dict: Dictionary with the tasks assigned to the different parts of the system.
     """
     # Cria o template do prompt com as instruções de formatação
     prompt = PromptTemplate(

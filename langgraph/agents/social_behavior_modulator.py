@@ -1,5 +1,5 @@
 """
-This module contains the Social Behavior Modulator agent.
+Agent responsible for the Social Behavior Modulator.
 """
 
 from langchain.prompts import PromptTemplate
@@ -12,7 +12,16 @@ from .prompts.social_behavior_modulator import SOCIAL_BEHAVIOR_MODULATOR
 parser_social_behavior_modulator = PydanticOutputParser(pydantic_object=SocialBehaviorModulator)
 
 def social_behavior_modulator_agent(state):
-    """Social Behavior Modulator Agent"""
+    """
+    This function processes the input messages and assigns tasks to the
+    social behavior modulator.
+
+    Args:
+        state (dict): Dictionary with information about the current state of the agent
+
+    Returns:
+        dict: Dictionary with information about the social behavior modulator plan
+    """
     prompt = PromptTemplate(
         template = SOCIAL_BEHAVIOR_MODULATOR,
         input_variables=["messages"],

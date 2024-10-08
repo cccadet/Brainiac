@@ -1,5 +1,5 @@
 """
-This snippet is a part of the agent that processes the Complex Thought Planner prompt.
+Agent that processes complex thought from the prefrontal cortex.
 """
 
 from langchain.prompts import PromptTemplate
@@ -12,7 +12,16 @@ from .prompts.complex_thought_planner import COMPLEX_TOUGHT_PLANNER
 parser = PydanticOutputParser(pydantic_object=ComplexThoughtPlanner)
 
 def complex_thought_planner_agent(state):
-    """Esta função processa as mensagens de entrada e atribui tarefas ao planejador de pensamento complexo."""
+    """
+    This function processes the input messages and assigns tasks to the 
+    complex thinking planner.
+    
+    Args:
+        state (dict): Dictionary with information about the current state of the agent
+        
+    Returns:
+        dict: Dictionary with information about the generated behavior plan
+    """
     prompt = PromptTemplate(
         template = COMPLEX_TOUGHT_PLANNER,
         input_variables=["messages"],
@@ -23,10 +32,10 @@ def complex_thought_planner_agent(state):
 
     result_dict = clean_json(response)
 
-    state["detailed_analysis"] = result_dict["detailed_analysis"]
-    state["standard_relations"] = result_dict["standard_relations"]
-    state["insights"] = result_dict["insights"]
-    state["implications_scenarios"] = result_dict["implications_scenarios"]
-    state["comprehensive_understanding"] = result_dict["comprehensive_understanding"]
-
-    return {"detailed_analysis": state["detailed_analysis"], "standard_relations": state["standard_relations"], "insights": state["insights"], "implications_scenarios": state["implications_scenarios"], "comprehensive_understanding": state["comprehensive_understanding"]}
+    return {
+        "detailed_analysis": result_dict["detailed_analysis"],
+        "standard_relations": result_dict["standard_relations"],
+        "insights": result_dict["insights"], 
+        "implications_scenarios": result_dict["implications_scenarios"],
+        "comprehensive_understanding": result_dict["comprehensive_understanding"]
+    }
